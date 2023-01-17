@@ -3,7 +3,6 @@ import images from "../assets/images";
 
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import styled from "styled-components";
-import "./style.css";
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const Menu = () => (
