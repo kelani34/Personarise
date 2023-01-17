@@ -32,6 +32,11 @@ const Wrapper = styled.div`
     max-width: 1140px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+      margin: 0.6rem;
+    }
   }
 `;
