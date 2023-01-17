@@ -1,6 +1,8 @@
 import { Header } from "./components";
 import Brands from "./containers/Brands";
+import Features from "./containers/Features";
 import Hero from "./containers/Hero";
+import Passion from "./containers/Passion";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Header />
       <Hero />
       <Brands />
+      <Passion />
+      <Features />
     </>
   );
 }
