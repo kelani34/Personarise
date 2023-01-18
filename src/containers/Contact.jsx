@@ -4,7 +4,8 @@ import styled from "styled-components";
 const Contact = () => {
   return (
     <Wrapper>
-      <div className="container">
+      <div
+        className="container">
         <div className="content">
           <h2>Curious to try? Get started now!</h2>
           <p>
