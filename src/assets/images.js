@@ -5,4 +5,5 @@ import ellipse from "./ellipse.png";
 export default {
   logo,
   playIcon,
+  ellipse,
 };

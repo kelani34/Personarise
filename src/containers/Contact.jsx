@@ -1,21 +1,24 @@
 import React from "react";
 import styled from "styled-components";
+import ellipse1 from "../assets/ellipse-bottom-right.svg";
+import ellipse2 from "../assets/ellipse-top-left.svg";
 
 const Contact = () => {
   return (
     <Wrapper>
-      <div
-        className="container">
-        <div className="content">
-          <h2>Curious to try? Get started now!</h2>
-          <p>
-            Join our early users and discover how Personarise is helping you
-            maximize career opportunities.
-          </p>
-        </div>
-        <div className="contact-box">
-          <textarea placeholder="example@gmail.com" />
-          <button>Get Started</button>
+      <div className="top">
+        <div className="container">
+          <div className="content">
+            <h2>Curious to try? Get started now!</h2>
+            <p>
+              Join our early users and discover how Personarise is helping you
+              maximize career opportunities.
+            </p>
+          </div>
+          <div className="contact-box">
+            <textarea placeholder="example@gmail.com" />
+            <button>Get Started</button>
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -27,11 +30,18 @@ export default Contact;
 const Wrapper = styled.div`
   max-width: 1400px;
   margin: 0 auto;
-  .container {
+  .top {
     background: #f4f1f1;
+    margin: 117px 20px;
+  }
+  .container {
+    background-image: url(${ellipse1}), url(${ellipse2});
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+
     border-radius: 16px;
     padding: 70px;
-    margin: 117px 20px;
+
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 650px) {
