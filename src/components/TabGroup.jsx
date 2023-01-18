@@ -81,6 +81,7 @@ const Tab = styled.button`
 const ButtonGroup = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 const Items = styled.div`
   div {
@@ -101,10 +102,16 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 166px;
+  margin-bottom: 193px;
   @media screen and (max-width: 995px) {
     img {
       display: none;
     }
     justify-content: center;
+  }
+  @media screen and (max-width: 800px) {
+    margin-top: 16px;
+    margin-bottom: 13px;
   }
 `;
