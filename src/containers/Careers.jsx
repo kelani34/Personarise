@@ -32,7 +32,7 @@ const Careers = () => {
           image={numbers}
           text="Track your career progress and hit your numbers - increase salary, more hand-on experience, develop skills with the 1st talent development platform."
           title="Hit your numbers"
-          className="num"
+          reverse
         />
       </div>
       <div className="career-box-container">
@@ -59,12 +59,16 @@ const Wrapper = styled.div`
   @media screen and (max-width: 800px) {
     background-image: none;
   }
+  @media screen and (max-width: 650px) {
+    margin-top: 100px;
+  }
   .container {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
     h1 {
       font-family: "DM Sans";
       font-style: normal;
@@ -99,6 +103,10 @@ const Wrapper = styled.div`
   .career-box-container {
     max-width: 1380px;
     margin: 148px auto;
+
+    @media screen and (max-width: 650px) {
+      margin: 0 auto;
+    }
   }
   .career-box {
     display: flex;
@@ -110,6 +118,9 @@ const Wrapper = styled.div`
     border-radius: 10px;
     padding: 10em;
     margin: 20px;
+    @media screen and (max-width: 480px) {
+      padding: 2em;
+    }
     h1 {
       font-family: "Inter";
       font-style: normal;

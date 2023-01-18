@@ -35,7 +35,8 @@ const Wrapper = styled.div`
     justify-content: space-between;
     @media screen and (max-width: 650px) {
       padding: 30px;
-      }
+      margin: 117px 20px 16px;
+    }
 
     @media screen and (max-width: 650px) {
       flex-direction: column;

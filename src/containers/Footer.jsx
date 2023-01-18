@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { GrLinkedinOption } from "react-icons/gr";
+import { AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -8,23 +10,31 @@ const Footer = () => {
         <div className="content">
           <ul>
             <li>Who we are</li>
-            <li>Who we are</li>
-            <li>Who we are</li>
+            <li>What we do</li>
+            <li>Contact</li>
           </ul>
           <ul>
-            <li>Who we are</li>
-            <li>Who we are</li>
-            <li>Who we are</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
           </ul>
           <ul>
-            <li>Who we are</li>
-            <li>Who we are</li>
-            <li>Who we are</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>License</li>
           </ul>
           <ul>
-            <li>Who we are</li>
-            <li>Who we are</li>
-            <li>Who we are</li>
+            <li>
+              <GrLinkedinOption /> <span>LinkedIn</span>
+            </li>
+            <li>
+              <AiOutlineTwitter />
+              <span>Twitter</span>
+            </li>
+            <li>
+              <AiFillInstagram />
+              <span>Instagram</span>
+            </li>
           </ul>
         </div>
         <div className="footer-line" />
@@ -67,6 +77,9 @@ const Wrapper = styled.footer`
 
         color: rgba(255, 255, 255, 0.6);
         margin: 16px;
+        span {
+          margin-left: 14px;
+        }
       }
     }
     .footer-line {

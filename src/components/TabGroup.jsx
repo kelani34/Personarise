@@ -87,6 +87,7 @@ const Items = styled.div`
   div {
     align-items: flex-start;
     max-width: 210px;
+    margin: 20px;
     p {
       text-align: left !important;
       font-size: 16px !important;

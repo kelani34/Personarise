@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import careerPerson from "../assets/career-person.svg";
 import rightArrow from "../assets/right-arrow.svg";
-const Content = ({ image, text, title }) => {
+const Content = ({ image, text, title, reverse }) => {
   return (
-    <StyledSection>
+    <StyledSection reverse={reverse}>
       <div className="img-wrapper">
         <img src={image} alt="career person" />
       </div>
@@ -27,6 +27,7 @@ const StyledSection = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px;
+  flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   @media screen and (max-width: 650px) {
     justify-content: center;
   }
@@ -55,6 +56,8 @@ const StyledSection = styled.div`
 
     @media screen and (max-width: 650px) {
       font-size: 28px;
+      line-height: 36px;
+      text-align: center;
     }
   }
   p {
@@ -69,6 +72,7 @@ const StyledSection = styled.div`
     max-width: 500px;
     @media screen and (max-width: 650px) {
       font-size: 14px;
+      text-align: center;
     }
   }
   a {

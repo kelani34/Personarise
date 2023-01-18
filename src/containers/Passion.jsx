@@ -31,6 +31,9 @@ const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
+  @media screen and (max-width: 650px) {
+    padding-bottom: 0;
+  }
 
   .container {
     display: flex;
@@ -38,7 +41,7 @@ const Wrapper = styled.div`
     justify-content: space-between;
     max-width: 1140px;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px;
     flex-wrap: wrap;
     @media screen and (max-width: 1120px) {
       justify-content: center;
@@ -62,6 +65,9 @@ const Wrapper = styled.div`
         line-height: 40px;
         margin-bottom: 14px;
       }
+      @media screen and (max-width: 650px) {
+        text-align: center;
+      }
     }
     p {
       font-family: "DM Sans";
@@ -76,6 +82,9 @@ const Wrapper = styled.div`
       color: rgba(21, 20, 57, 0.4);
 
       mix-blend-mode: normal;
+      @media screen and (max-width: 650px) {
+        text-align: center;
+      }
     }
   }
 `;
