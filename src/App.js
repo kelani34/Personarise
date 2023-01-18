@@ -4,6 +4,7 @@ import Careers from "./containers/Careers";
 import Features from "./containers/Features";
 import Hero from "./containers/Hero";
 import Passion from "./containers/Passion";
+import Testimonials from "./containers/Testimonials";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Passion />
       <Features />
       <Careers />
+      <Testimonials />
     </>
   );
 }

@@ -35,12 +35,15 @@ const Careers = () => {
           className="num"
         />
       </div>
-      <div className="career-box">
-        <h1>Switch to a career in tech with ease</h1>
-        <p>
-          Start your tech journey or take your career to the next level with
-          Personarise today.
-        </p>
+      <div className="career-box-container">
+        <div className="career-box">
+          <h1>Switch to a career in tech with ease</h1>
+          <p>
+            Start your tech journey or take your career to the next level with
+            Personarise today.
+          </p>
+          <button>Get started</button>
+        </div>
       </div>
     </Wrapper>
   );
@@ -93,6 +96,10 @@ const Wrapper = styled.div`
       margin-bottom: 48px;
     }
   }
+  .career-box-container {
+    max-width: 1380px;
+    margin: 148px auto;
+  }
   .career-box {
     display: flex;
     flex-direction: column;
@@ -101,7 +108,8 @@ const Wrapper = styled.div`
     mix-blend-mode: normal;
     border: 2px solid #ebeaed;
     border-radius: 10px;
-    padding: 15em;
+    padding: 10em;
+    margin: 20px;
     h1 {
       font-family: "Inter";
       font-style: normal;
@@ -115,6 +123,9 @@ const Wrapper = styled.div`
 
       color: rgba(0, 0, 0, 0.87);
       margin-bottom: 32px;
+      @media screen and (max-width: 650px) {
+        font-size: 36px;
+      }
     }
     p {
       font-family: "DM Sans";
@@ -131,6 +142,24 @@ const Wrapper = styled.div`
       color: rgba(21, 20, 57, 0.4);
 
       mix-blend-mode: normal;
+      margin-bottom: 67px;
+    }
+    button {
+      border: none;
+      background: #257cff;
+      border-radius: 8px;
+      padding: 12px 43px;
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      /* identical to box height, or 144% */
+
+      letter-spacing: -0.01em;
+
+      color: rgba(255, 255, 255, 0.87);
     }
   }
 `;
