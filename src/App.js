@@ -1,6 +1,7 @@
 import { Header } from "./components";
 import Brands from "./containers/Brands";
 import Careers from "./containers/Careers";
+import Contact from "./containers/Contact";
 import Features from "./containers/Features";
 import Hero from "./containers/Hero";
 import Passion from "./containers/Passion";
@@ -16,6 +17,7 @@ function App() {
       <Features />
       <Careers />
       <Testimonials />
+      <Contact />
     </>
   );
 }
